@@ -1,0 +1,7 @@
+{
+  "name": "Baylo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
