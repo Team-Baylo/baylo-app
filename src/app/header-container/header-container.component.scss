@@ -1,0 +1,42 @@
+.header {
+    background-color: #fdcb6e;
+    display:block;
+    width: auto !important;
+    color: #e67e22;
+    
+  }
+  .scroll{
+    height:100% !important
+  }
+
+//   .header-logo {
+//       width: 50%;
+//   }
+
+  .icons {
+      font-size: 1.9em;
+      padding-top: 2.5%;
+      text-align: right;
+  }
+
+  .icons .icon {
+      padding: 0.25em;
+  }
+
+  .search-container {
+      background-color: #e67e22;
+  }
+  
+  .logo-container {
+      padding-top: 5%;
+  }
+
+  .search-row {
+      padding: 5px;
+      margin-left: 8px;
+      margin-right: 8px;
+  }
+
+  .search-row .searchbar {
+      background-color: #fff;
+  }
