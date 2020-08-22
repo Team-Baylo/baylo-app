@@ -8,7 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { HeaderContainerModule } from '../header-container/header-container.module';
-import { HomeContainerPageModule } from '../home-container/home-container.module';
+import { HomeContainerPageModule } from './home-container/home-container.module';
 
 @NgModule({
   imports: [

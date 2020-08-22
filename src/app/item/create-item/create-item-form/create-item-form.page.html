@@ -1,0 +1,37 @@
+<br>
+<!-- <form [formGroup]="createForm" (ngSubmit)="submitNewItem()"> -->
+<form>
+  <ion-item-divider color="light">
+    <ion-label>New Item for Trade</ion-label>
+  </ion-item-divider>
+  <ion-list color="tertiary">
+    <ion-item>
+      <ion-label>Item Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Category</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Item Description</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <ion-row class="ion-justify-content-end">
+      <ion-col size="3" offset="3">
+
+        <ion-button color="medium">Cancel</ion-button>
+
+
+      </ion-col>
+      <ion-col size="6">
+
+        <ion-button type="submit" class="create-btn">Submit</ion-button>
+
+
+      </ion-col>
+
+    </ion-row>
+  </ion-list>
+
+</form>
