@@ -15,7 +15,8 @@ export class TradeItemService {
   constructor(private http: HttpClient) { }
 
   // API URL:
-  private getDefaultListUrl = "";
+  private getDefaultListUrl = "htpp://localhost:8080/get/list";
+
 
   //-- HTTP Calls
 
@@ -23,6 +24,10 @@ export class TradeItemService {
   public getDefaultList() {
     return this.http.get(this.getDefaultListUrl + "/userid");
   }
+
+  // public getImage() {
+  //   return this.http.post(this.getDefaultListUrl + "/userid", {responseType: "blob"});
+  // }
 
   // Search
 
