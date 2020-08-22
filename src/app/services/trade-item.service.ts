@@ -37,7 +37,26 @@ export class TradeItemService {
 
   // POST: Create Item
   public createItem(userId: number, categoryId: number, title: string, description: string) {
-    const item = { owner: { id : userId }, category : { id : categoryId }, status : 1, title : title, description : description };
+    const item = { owner: { id : userId }, category : { id : categoryId }, status : 1, title, description };
     return this.http.post(this.getDefaultListUrl + '/item/', item);
   }
+
+  // GET: Category List
+  public getCategories() {
+    return this.http.get(this.getDefaultListUrl + '/categories');
+  }
+
+  public createTradeRequest(tradeItemId: number, wantItemId: number) {
+    const tradeRequest = { status : 1, tradeItem : { id : tradeItemId }, wantItem : { id : wantItemId}};
+    return this.http.post(this.getDefaultListUrl + '/trade', tradeRequest);
+  }
+
+  public getTradeRequest(id: number) {
+    return this.http.get(this.getDefaultListUrl + '/trade/' + id);
+  }
+
+  public acceptTradeRequest(id: number) {
+    return this.http.put(this.getDefaultListUrl + '/trade/' + id + '/accept', {});
+  }
+
 }
