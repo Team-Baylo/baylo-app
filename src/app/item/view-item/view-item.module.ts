@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ViewItemPageRoutingModule } from './view-item-routing.module';
 
 import { ViewItemPage } from './view-item.page';
+import { HeaderContainerModule } from 'src/app/header-container/header-container.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewItemPageRoutingModule
+    ViewItemPageRoutingModule,
+    HeaderContainerModule
   ],
   declarations: [ViewItemPage]
 })
