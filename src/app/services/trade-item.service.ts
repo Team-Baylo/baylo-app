@@ -15,7 +15,7 @@ export class TradeItemService {
   constructor(private http: HttpClient) { }
 
   // API URL:
-  private getDefaultListUrl = "htpp://localhost:8080/get/list";
+  private getDefaultListUrl = "http://localhost:8080";
 
 
   //-- HTTP Calls
@@ -25,13 +25,15 @@ export class TradeItemService {
     return this.http.get(this.getDefaultListUrl + "/userid");
   }
 
-  // public getImage() {
-  //   return this.http.post(this.getDefaultListUrl + "/userid", {responseType: "blob"});
-  // }
-
   // Search
+  public searchItemByTitle(title: string) {
+    return this.http.get(this.getDefaultListUrl + '/items/find-by-title=' + title);
+  }
 
   // Get Item
+  public getItem(id: number) {
+    return this.http.get(this.getDefaultListUrl + '/item/' + id);
+  }
 
   // POST: Create Item
 }
