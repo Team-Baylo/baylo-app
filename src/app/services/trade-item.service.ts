@@ -36,4 +36,8 @@ export class TradeItemService {
   }
 
   // POST: Create Item
+  public createItem(userId: number, categoryId: number, title: string, description: string) {
+    const item = { owner: { id : userId }, category : { id : categoryId }, status : 1, title : title, description : description };
+    return this.http.post(this.getDefaultListUrl + '/item/', item);
+  }
 }
